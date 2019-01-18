@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wx.miniapp.dao.UserDao">
+
+
+    <select id="select" resultType="cn.binarywang.wx.miniapp.bean.WxMaUserInfo">
+		select  `openId`,`nickName`,`gender`,`language`,`city`,`province`,`country`,`avatarUrl`,`watermark` from user where openId = #{value}
+	</select>
+
+	<insert id="save" parameterType="cn.binarywang.wx.miniapp.bean.WxMaUserInfo" >
+		insert into user
+		(
+			`openId`,
+			`nickName`,
+			`gender`,
+			`language`,
+			`city`,
+			`province`,
+			`country`,
+			`avatarUrl`,
+			`watermark`
+		)
+		values
+		(
+			#{openId},
+			#{nickName},
+			#{gender},
+			#{language},
+			#{city},
+			#{province},
+			#{country},
+			#{avatarUrl},
+			#{watermark,typeHandler=com.wx.miniapp.handler.ExampleTypeHandler}
+		)
+	</insert>
+
+
+</mapper>

@@ -1,0 +1,13 @@
+CREATE TABLE `user` (
+`id` int NOT NULL AUTO_INCREMENT,
+openId varchar(100) ,
+nickName varchar(255) ,
+gender char(1) ,
+language varchar(50) ,
+city varchar(100) ,
+province varchar(100) ,
+country varchar(50) ,
+avatarUrl varchar(255) ,
+watermark blob ,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;

@@ -1,0 +1,7 @@
+# REDIS (RedisProperties)
+# Redis数据库索引（默认为0）
+spring:
+    redis:
+        database: 0
+        host: 212533i5x7.iok.la
+        port: 5301

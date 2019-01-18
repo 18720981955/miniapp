@@ -1,0 +1,7 @@
+mall:
+    configs:
+        - mallId: 1
+          mallName: 一食堂
+          adress: 交大一食堂
+          phone: 18720981955
+          remark: 新店开张
