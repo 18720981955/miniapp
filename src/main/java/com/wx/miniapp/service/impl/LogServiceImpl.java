@@ -8,7 +8,9 @@ import com.wx.miniapp.domain.PageDO;
 import com.wx.miniapp.service.LogService;
 import com.wx.miniapp.utils.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 /**
  * LogServiceImpl

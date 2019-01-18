@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 /**
  * @author <a href="https://github.com/binarywang">Binary Wang</a>
  */
-@MapperScan("com.wx.miniapp.mybatis")
+@MapperScan("com.wx.miniapp.dao")
 @SpringBootApplication
 public class WxMaDemoApplication{
     public static void main(String[] args) {

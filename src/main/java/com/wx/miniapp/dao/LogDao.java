@@ -2,6 +2,8 @@ package com.wx.miniapp.dao;
 
 import com.wx.miniapp.domain.LogDO;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 import java.util.Map;
 
@@ -13,6 +15,7 @@ import java.util.Map;
  * @date 2019/1/8 15:21
  */
 @Mapper
+@Repository
 public interface LogDao {
 
     LogDO get(Long id);

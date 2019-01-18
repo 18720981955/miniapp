@@ -44,11 +44,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-        <!--处理“LEGACYHTML5”模式[http://nekohtml.sourceforge.net]模板时需要nekoHTML 1.9.15或更高版本-->
-        <dependency>
-            <groupId>net.sourceforge.nekohtml</groupId>
-            <artifactId>nekohtml</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>com.github.binarywang</groupId>
